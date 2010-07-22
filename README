@@ -1,0 +1,37 @@
+ABOUT
+
+uTitleis an experimental tool which uses Twitter to allow users to make free and timeline based comments on YouTube videos. The original concept is explained in detail in this blog post http://www.rsc-ne-scotland.org.uk/mashe/2010/06/convergence-youtube-meets-twitter-in-timeline-commenting-of-youtube-videos-using-twitter-utitle/, but the basic idea is video are played in custom interface which lets users 'tweet' comments. Part of each tweet includes a hashtag linking it to a specific YouTube video and a timestamp from the current point in the video. Tweets are stored in TwapperKeepr and temporarily cached in uTitle. When a video is replayed in the uTitle interface existing comments appear at the timed points as subtitles and users can also use the timed tweets to jump to part of the video (see this video for a demonstration http://www.youtube.com/watch?v=RVp2F6tDWfw).  
+
+REQUIREMENTS
+
+Developed for Apache server PHP5. The JW Player is licensed under a Creative Commons License and can be only used for noncommercial purposes. Licenses can be purchased for commercial use. More information is available from the JW Player website.
+
+
+INSTALLATION
+
+1. Register a new application with Twitter 
+	a. Application Type: Browser
+	b. Callback URL: {yourplannedwebaddress}/callback.php
+	c. Default Access type: Read & Write
+	d. Use Twitter for login: Yes
+
+2. In config.php 
+	a. Enter Consumer key and Consumer secret
+	b. Enter requested API key from TwapperKeeper
+	c. Enter the base url (UTITLE_URL) for your installation
+
+3. Copy files to server
+
+4. Chmod 'xml' folder to 777
+
+5. ... [I think that is everything]
+
+
+
+MORE INFORMATION
+
+Developed by Martin Hawksey (mostly in the evenings and weekends), whilst based at the JISC RSC Scotland North & East.
+
+Follow on Twitter: @mhawksey
+Read my blog: http://www.rsc-ne-scotland.org.uk/mashe/ 
+
